@@ -1,12 +1,10 @@
 # angular-cipher-dashboard
 
-This is just an angular based dashboard to play around with my other project [angular-cipher-filters](https://github.com/zsoltiii/angular-cipher-filters).
+This is just an angular based dashboard to play around with my other project [angular-cipher-filters](https://github.com/zsoltiii/angular-cipher-filters) and showcases the use of modular components called directives.
 
-Initial project skeleton was set up with [Yeoman](http://yeoman.io/) and showcases the use of modular components called directives.
+Initial project skeleton was set up with [Yeoman](http://yeoman.io/).
 
 ![screenshot](http://i.imgur.com/EV86C83.png "Angular Cipher Dashboard")
-
-To jump straight into it try the DEMO.
 
 # Installation
 
