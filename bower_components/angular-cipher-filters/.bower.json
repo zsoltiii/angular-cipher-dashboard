@@ -1,0 +1,29 @@
+{
+  "name": "angular-cipher-filters",
+  "version": "0.1.0",
+  "description": "A collection of common ciphers implemented as angular filers",
+  "homepage": "https://github.com/zsoltiii/angular-cipher-filters",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zsoltiii/angular-cipher-filters.git"
+  },
+  "author": "Zsolt Szalai",
+  "license": "MIT",
+  "main": "./dist/angular-cipher-filters.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.0"
+  },
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "8526286320cf48c8ca290718772e212a833d4736"
+  },
+  "_source": "git://github.com/zsoltiii/angular-cipher-filters.git",
+  "_target": "~0.1.0",
+  "_originalSource": "angular-cipher-filters"
+}

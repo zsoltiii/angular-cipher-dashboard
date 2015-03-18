@@ -1,0 +1,44 @@
+{
+    "name": "angular-cipher-filters",
+    "version": "0.1.0",
+    "description": "A collection of common ciphers implemented as angular filers",
+    "homepage": "https://github.com/zsoltiii/angular-cipher-filters",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zsoltiii/angular-cipher-filters.git"
+    },
+    "keywords": [
+        "angularjs",
+        "angular",
+        "filter",
+        "cipher",
+        "caesar",
+        "rot13",
+        "vigenere",
+        "scytale"
+    ],
+    "author": "Zsolt Szalai",
+    "license": "MIT",
+    "main": "./src/angular-cipher-filter.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-uglify": "~0.8.0",
+        "grunt-contrib-jshint": "~0.11.0",
+        "grunt-contrib-concat": "~0.5.1",
+        "grunt-karma": "~0.10.1",
+        "karma": "~0.12.31",
+        "karma-jasmine": "~0.3.5",
+        "karma-chrome-launcher": "~0.1.7",
+        "karma-script-launcher": "~0.1.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified. Use 'grunt test' instead.\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/zsoltiii/angular-cipher-filters/issues"
+    }
+}
