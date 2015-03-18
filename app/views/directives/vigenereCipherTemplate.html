@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="pull-right">
+            <input id="check"
+                   bs-switch
+                   ng-model="check"
+                   switch-active="{{ active }}"
+                   type="checkbox"
+                   switch-size="mini"
+                   switch-on-text="encode"
+                   switch-off-text="decode"
+                   switch-on-color="danger"
+                   switch-off-color="success"
+                   switch-label="mode">
+        </div>
+        <div>Vigenere cipher</div>
+    </div>
+    <div class="panel-body">
+        {{source | vigenereCipher : keyword : check}}
+    </div>
+    <div class="panel-footer">
+        <label for="directiveKeyword">Keyword:</label>
+        <input type="text" id="directiveKeyword" name="directiveKeyword" ng-model="keyword">
+    </div>
+</div>

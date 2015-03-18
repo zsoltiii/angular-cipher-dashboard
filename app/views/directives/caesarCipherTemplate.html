@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <div class="pull-right">
+            <input id="check"
+                   bs-switch
+                   ng-model="check"
+                   switch-active="{{ active }}"
+                   type="checkbox"
+                   switch-size="mini"
+                   switch-on-text="encode"
+                   switch-off-text="decode"
+                   switch-on-color="danger"
+                   switch-off-color="success"
+                   switch-label="mode">
+        </div>
+        <div>Caesar cipher</div>
+    </div>
+    <div class="panel-body">
+        {{source | caesarCipher : check ? directiveRotation : -directiveRotation}}
+    </div>
+    <div class="panel-footer">
+        <label for="directiveRotation">Rotation setting:</label>
+        <input type="number" id="directiveRotation" name="directiveRotation" ng-model="directiveRotation" style="width:40px;">
+    </div>
+</div>

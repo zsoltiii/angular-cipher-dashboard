@@ -1,0 +1,10 @@
+
+# project
+node_modules
+bower_components
+.tmp
+.sass-cache
+npm-debug.log
+
+# IDE
+.idea/

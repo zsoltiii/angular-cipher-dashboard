@@ -1,0 +1,46 @@
+<div class="jumbotron dashboard">
+    <h1>Playground</h1>
+    <h4>A cipher experiment</h4>
+</div>
+
+
+<div class="row">
+    <div class="panel panel-standout">
+        <div class="panel-heading">
+            Enter text to decode
+        </div>
+        <div class="panel-body text-center">
+            <textarea id="cipherSource" rows="5" cols="60" placeholder="Add your text here" ng-model="textAreaText"></textarea>
+        </div>
+        <div class="panel-footer">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <vigenere-cipher source="{{textAreaText}}" keyword="aaaaaaaa"></vigenere-cipher>
+    </div>
+
+    <div class="col-md-4">
+        <vigenere-cipher source="{{textAreaText}}" keyword="aaaaaaaaabbaaaaabbbbaabbbaaaaaaaaaa"></vigenere-cipher>
+    </div>
+
+    <div class="col-md-4">
+        <vigenere-cipher source="{{textAreaText}}" keyword="Caesar"></vigenere-cipher>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <caesar-cipher source="{{textAreaText}}" rotate="1"></caesar-cipher>
+    </div>
+
+    <div class="col-md-4">
+        <caesar-cipher source="{{textAreaText}}" rotate="6"></caesar-cipher>
+    </div>
+
+    <div class="col-md-4">
+        <caesar-cipher source="{{textAreaText}}" rotate="13"></caesar-cipher>
+    </div>
+</div>

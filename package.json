@@ -1,0 +1,26 @@
+{
+  "name": "angular-cipher-dashboard",
+  "version": "0.0.0",
+  "repository": "https://github.com/zsoltiii/angular-cipher-dashboard",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "~0.7.4",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-uglify": "~0.8.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-karma": "~0.10.1",
+    "jshint-stylish": "~1.0.0",
+    "karma-jasmine": "~0.3.5",
+    "karma-chrome-launcher": "~0.1.7",
+    "protractor": "~1.6.0"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "bower install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}
+
