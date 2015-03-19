@@ -4,6 +4,8 @@ This is just an angular based dashboard to play around with my other project [an
 
 Initial project skeleton was set up with [Yeoman](http://yeoman.io/).
 
+To jump straight in, why don't you **try the [DEMO](http://zsoltiii.github.io/angular-cipher-dashboard/app/index.html)**
+
 ![screenshot](http://i.imgur.com/EV86C83.png "Angular Cipher Dashboard")
 
 # Installation
@@ -26,7 +28,6 @@ Open your browser and load `http://localhost:8000/app/`.
 
 #TODO
 
-- Add demo to github.io
 - Clean up the mess Yeoman created / left behind
 - Complete unit and end-to-end tests
 - Add more experimental pages
