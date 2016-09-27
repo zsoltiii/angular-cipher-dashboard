@@ -38,13 +38,13 @@ module.exports = function(config) {
     port: 8080,
 
     browsers: [
-      'Chrome'
+      'PhantomJS'
     ],
 
     // Which plugins to enable
     plugins: [
-      'karma-chrome-launcher',
-      'karma-jasmine'
+      require('karma-jasmine'),
+      require('karma-phantomjs-launcher')
     ],
 
     // Continuous Integration mode

@@ -9,7 +9,5 @@
  */
 angular.module('angular-cipher-dashboard')
     .controller('MainCtrl', ['$scope', function ($scope) {
-
         $scope.textAreaText = 'Add your text here';
-
     }]);

@@ -9,6 +9,9 @@ angular.module('angular-cipher-dashboard')
                 source: '@'
             },
             templateUrl: 'views/directives/vigenereCipherTemplate.html',
+            controller: ['$scope', function($scope) {
+                $scope.check = true;
+            }],
             replace: true,
             link: function ($scope, element, attrs) {
                 $scope.$watch('source', function(value) {

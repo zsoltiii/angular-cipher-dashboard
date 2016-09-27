@@ -13,6 +13,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Configurable paths for the application
   var appConfig = {
@@ -71,6 +72,20 @@ module.exports = function (grunt) {
           ' * @license <%= pkg.license %>\n**/\n\n'
     },
 
+    concat: {
+        options: {
+            banner: '<%= meta.banner %>\'use strict\';\n',
+            process: function(src, filepath) {
+                return '// Source: ' + filepath + '\n' +
+                    src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, '$1');
+            }
+        },
+        build: {
+            src: ['app/**/*.js'],
+            dest: 'dist/<%= pkg.name %>.js'
+        }
+    },
+
     uglify: {
       options: {
           banner: '<%= meta.banner %>'
@@ -89,13 +104,13 @@ module.exports = function (grunt) {
           autoWatch: false
       },
       local: {
-          browsers: ['Chrome']
+          browsers: ['PhantomJS']
       }
     }
   });
 
   grunt.registerTask('test-js', ['jshint']);
   grunt.registerTask('test', ['jshint', 'karma:local']);
-  grunt.registerTask('build', ['clean:dist', 'uglify']);
+  grunt.registerTask('build', ['clean:dist', 'concat', 'uglify']);
   grunt.registerTask('default', ['test', 'build']);
 };

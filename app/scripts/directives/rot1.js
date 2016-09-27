@@ -8,6 +8,9 @@ angular.module('angular-cipher-dashboard')
                 source: '@'
             },
             templateUrl: 'views/directives/rot1Template.html',
+            controller: ['$scope', function($scope) {
+                $scope.check = true;
+            }],
             replace: true,
             link: function ($scope, element, attrs) {
                 $scope.$watch('source', function(value) {

@@ -9,7 +9,5 @@
  */
 angular.module('angular-cipher-dashboard')
     .controller('PlaygroundCtrl', ['$scope', function ($scope) {
-
         $scope.textAreaText = 'Something to start with on the Playground';
-
     }]);

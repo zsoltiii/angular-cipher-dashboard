@@ -10,7 +10,6 @@
  */
 angular.module('angular-cipher-dashboard', ['zsoltiii.angular-cipher-filters', 'ngRoute', 'frapontillo.bootstrap-switch']);
 
-
 angular.module('angular-cipher-dashboard')
     .config(function($routeProvider) {
 

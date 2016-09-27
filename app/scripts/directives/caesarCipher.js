@@ -11,6 +11,7 @@ angular.module('angular-cipher-dashboard')
             templateUrl: 'views/directives/caesarCipherTemplate.html',
             controller: ['$scope', function($scope) {
                 $scope.directiveRotation = parseInt($scope.rotate, 10);
+                $scope.check = false;
             }],
             replace: true,
             link: function ($scope, element, attrs) {
